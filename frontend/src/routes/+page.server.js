@@ -1,13 +1,5 @@
-import { PRIVATE_STRAPI_URL } from '$env/static/private';
+import { getStrapiData } from '$lib/strapi';
 
 export async function load() {
-	const fetchHome = async () => {
-		const url = `${PRIVATE_STRAPI_URL}/api/home-page?populate=*`;
-		const response = await fetch(url);
-		const data = await response.json();
-
-		return data.data.attributes;
-	};
-
-	return { home: fetchHome() };
+	return { home: getStrapiData('home-page', 'populate=*') };
 }
