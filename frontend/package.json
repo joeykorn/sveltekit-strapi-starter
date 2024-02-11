@@ -10,9 +10,12 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
+		"@iconify-json/heroicons": "^1.1.19",
+		"@iconify-json/simple-icons": "^1.1.90",
 		"@sveltejs/adapter-auto": "^3.1.1",
 		"@sveltejs/kit": "^2.5.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.2",
+		"@tailwindcss/typography": "^0.5.10",
 		"autoprefixer": "^10.4.17",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
@@ -22,6 +25,7 @@
 		"prettier-plugin-svelte": "^3.1.2",
 		"svelte": "^4.2.10",
 		"tailwindcss": "^3.4.1",
+		"unplugin-icons": "^0.18.5",
 		"vite": "^5.1.1"
 	},
 	"type": "module",
