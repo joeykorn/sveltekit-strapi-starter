@@ -11,7 +11,7 @@
 	},
 	"devDependencies": {
 		"@iconify-json/heroicons": "^1.1.19",
-		"@iconify-json/simple-icons": "^1.1.90",
+		"@iconify-json/simple-icons": "^1.1.91",
 		"@sveltejs/adapter-auto": "^3.1.1",
 		"@sveltejs/kit": "^2.5.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.2",
@@ -22,7 +22,7 @@
 		"eslint-plugin-svelte": "^2.35.1",
 		"postcss": "^8.4.35",
 		"prettier": "^3.2.5",
-		"prettier-plugin-svelte": "^3.1.2",
+		"prettier-plugin-svelte": "^3.2.0",
 		"svelte": "^4.2.10",
 		"tailwindcss": "^3.4.1",
 		"unplugin-icons": "^0.18.5",
@@ -30,6 +30,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"bits-ui": "^0.17.0"
+		"bits-ui": "^0.18.1"
 	}
 }
