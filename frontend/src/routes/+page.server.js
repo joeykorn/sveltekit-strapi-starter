@@ -1,5 +1,5 @@
-import { getStrapiData } from '$lib/strapi';
+import { fetchStrapiData } from '$lib/strapi';
 
 export async function load() {
-	return { home: getStrapiData('home-page', 'populate=*') };
+	return { home: await fetchStrapiData('home-page', 'populate=*') };
 }

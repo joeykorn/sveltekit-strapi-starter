@@ -1,8 +1,10 @@
 <script>
 	export let data;
-	let home = data.home;
+	let home = data.home.attributes;
 </script>
 
-<h1>
-	{home.hero.title}
-</h1>
+{#if home.hero.heading}
+	<h1>
+		{home.hero.heading}
+	</h1>
+{/if}
