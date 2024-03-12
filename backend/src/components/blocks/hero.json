@@ -1,8 +1,7 @@
 {
-  "collectionName": "components_content_display_heroes",
+  "collectionName": "components_blocks_heroes",
   "info": {
-    "displayName": "hero",
-    "description": ""
+    "displayName": "hero"
   },
   "options": {},
   "attributes": {
