@@ -6,10 +6,12 @@ export const getStrapiURL = (path = '') => {
   return `${PUBLIC_STRAPI_URL || 'http://localhost:1337'}${path}`;
 };
 
+/** @param {string} url */
 export const getStrapiMedia = async (url) => {
-  if (url) return `${getStrapiURL()}${url}`;
+  return `${getStrapiURL()}${url}`;
 };
 
+/** @param {string} pathname */
 export const fetchStrapiAPI = async (pathname, urlParamsObject = {}, options = {}) => {
   const mergedOptions = {
     headers: {
@@ -24,14 +26,20 @@ export const fetchStrapiAPI = async (pathname, urlParamsObject = {}, options = {
   return data.data;
 };
 
-export const getPageBySlug = async (slug) => {
+/** 
+ * @param {string} slug
+ * @param {Object} urlParamsObject 
+ */
+export const getPageBySlug = async (slug, urlParamsObject = {}) => {
   const token = PUBLIC_STRAPI_API_TOKEN;
 
   const path = `/pages`;
-  const urlParamsObject = {
-    filters: { slug }
+  urlParamsObject = {
+    filters: { slug },
+    ...urlParamsObject
   };
   const options = { headers: { Authorization: `Bearer ${token}` } }
 
   return await fetchStrapiAPI(path, urlParamsObject, options);
 };
+
